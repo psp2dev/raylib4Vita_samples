@@ -8,11 +8,11 @@ if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
   endif()
 endif()
 
-project(raylib_models_mesh_generation)
+project(raylib_models_box_collisions)
 include("${DOLCESDK}/share/dolce.cmake" REQUIRED)
 
-set(DOLCE_APP_NAME "RAYLIB 9")
-set(DOLCE_TITLEID  "RAYL00009")
+set(DOLCE_APP_NAME "RAYLIB 7")
+set(DOLCE_TITLEID  "RAYL00007")
 set(DOLCE_VERSION  "01.00")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DVITA -Wall -fno-lto -fno-pic -fno-plt -DRLGL_IMPLEMENTATION -DGRAPHICS_API_OPENGL_ES2 -DSUPPORT_MESH_GENERATION -DPLATFORM_VITA")
