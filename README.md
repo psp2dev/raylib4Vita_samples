@@ -22,7 +22,7 @@ Examples using raylib textures functionality, including image/textures loading/g
 | ## | example  | image  | developer  | new |
 |----|----------|--------|:----------:|:---:|
 | 48 | [textures_logo_raylib](textures/textures_logo_raylib/main.c)                   | <img src="textures/textures_logo_raylib/textures_logo_raylib.png" alt="textures_logo_raylib" width="200">                   | ray                                              |        |
-| 60 | [textures_background_scrolling](textures/textures_background_scrolling/main.c) | <img src="textures/textures_background_scrolling/textures_background_scrolling.png" alt="textures_background_scrolling" width="200"> | ray                                              | ⭐️     |
+| 60 | [textures_image_generation](textures/textures_image_generation/main.c) | <img src="textures/textures_image_generation/textures_image_generation.png" alt="textures_image_generation" width="200"> | ray                                              | ⭐️     |
 
 ### category: models
 
