@@ -18,6 +18,7 @@
 #include <psp2/gxm.h>
 #include <psp2/ctrl.h>
 #include <psp2/system_param.h>
+extern uint32_t sceLibcHeapSize = 2194304;
 int main(void)
 {
     // Initialization

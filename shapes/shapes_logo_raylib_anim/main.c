@@ -18,6 +18,7 @@
 #include <psp2/gxm.h>
 #include <psp2/ctrl.h>
 #include <psp2/system_param.h>
+extern uint32_t sceLibcHeapSize = 2194304;
 bool flag=true;
 int xflag=0;
 
@@ -140,7 +141,7 @@ void readPad() {
     }
   }
 
-  if (enter_button == SCE_SYSTEM_PARAM_ENTER_BUTTON_ASSIGN_CIRCLE) {
+  if (enter_button == SCE_SYSTEM_PARAM_ENTER_BUTTON_CIRCLE) {
     old_pad[PAD_ENTER] = old_pad[PAD_CIRCLE];
     current_pad[PAD_ENTER] = current_pad[PAD_CIRCLE];
     pressed_pad[PAD_ENTER] = pressed_pad[PAD_CIRCLE];

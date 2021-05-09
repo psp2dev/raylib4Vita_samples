@@ -19,7 +19,7 @@
 #include <psp2/ctrl.h>
 #include <psp2/system_param.h>
 bool flag=true;
-
+extern uint32_t sceLibcHeapSize = 2194304;
 #define ALIGN_CENTER(a, b) (((a) - (b)) / 2)
 #define ALIGN_RIGHT(x, w) ((x) - (w))
 
@@ -146,7 +146,7 @@ void readPad() {
     }
   }
 
-  if (enter_button == SCE_SYSTEM_PARAM_ENTER_BUTTON_ASSIGN_CIRCLE) {
+  if (enter_button == SCE_SYSTEM_PARAM_ENTER_BUTTON_CIRCLE) {
     old_pad[PAD_ENTER] = old_pad[PAD_CIRCLE];
     current_pad[PAD_ENTER] = current_pad[PAD_CIRCLE];
     pressed_pad[PAD_ENTER] = pressed_pad[PAD_CIRCLE];
@@ -203,7 +203,7 @@ int main(void)
 {
     // Initialization
     //---------------------------------------------------------
-    pibInit(PIB_SHACCCG|PIB_GET_PROC_ADDR_CORE |PIB_ENABLE_MSAA );
+    pibInit(PIB_SHACCCG|PIB_GET_PROC_ADDR_CORE);
 
     debugNetInit("192.168.1.47",18194,3);
     sleep(1);
