@@ -1,6 +1,20 @@
 # raylib4Vita samples
 raylib samples for PlayStation Vita
 
+For compiling each sample
+```
+cd [sample]
+mkdir build
+cd build
+cmake ..
+make
+```
+For udp logs you can use debug.sh script with the content
+```
+echo [HOST] debugnet listener up
+echo [HOST] ready to have a lot of fun!!!
+socat udp-recv:18194 stdout
+```
 ## EXAMPLES LIST
 
 ### category: shapes
