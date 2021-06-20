@@ -216,7 +216,7 @@ int main(int argc, char *argv[])
   pibInit(PIB_SHACCCG|PIB_GET_PROC_ADDR_CORE);
 
     //initEGL();
-    debugNetInit("192.168.1.47",18194,3);
+    debugNetInit("192.168.1.12",18194,3);
     sleep(1);
     sceCtrlSetSamplingMode(SCE_CTRL_MODE_ANALOG);
 		
