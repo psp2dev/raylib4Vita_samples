@@ -323,7 +323,7 @@ Texture2D texture =LoadTextureFromImage(checked);
     models[7] = LoadModelFromMesh(GenMeshPoly(5, 2.0f));
 
     // Set checked texture as default diffuse component for all models material
-   for (int i = 0; i < NUM_MODELS; i++) models[i].materials[0].maps[MAP_DIFFUSE].texture = texture;
+   for (int i = 0; i < NUM_MODELS; i++) models[i].materials[0].maps[MATERIAL_MAP_DIFFUSE].texture = texture;
 
  /*Camera camera = { 0 };
     camera.position = (Vector3){ 5.0f, 5.0f, 5.0f };
